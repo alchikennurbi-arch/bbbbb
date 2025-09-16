@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 30px;
+      }
+
+      .container {
+        background-color: white;
+        padding: 80px;
+        width: 1000px;
+      }
+      .text {
+        display: flex;
+        justify-content: end;
+        margin-top: -40px;
+      }
+      .minus {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        color: gray;
+        margin-right: 50px;
+      }
+      .large {
+        width: 600px;
+        margin-top: 30px;
+      }
+      .number {
+        font-size: 45px;
+        line-height: 45px;
+      }
+      .we {
+        color: gray;
+        margin-bottom: 20px;
+        margin-top: -160px;
+        margin-left: 250px;
+      }
+      .button {
+        background-color: black;
+        color: white;
+        border: none;
+        width: 150px;
+        margin-left: 250px;
+
+        margin-bottom: 10px;
+        height: 50px;
+        opacity: 1;
+        position: relative;
+      }
+      .inside:hover {
+        opacity: 2;
+      }
+      .inside {
+        width: 150px;
+        position: absolute;
+        height: 50px;
+        background-color: brown;
+        margin-left: 250px;
+        margin-top: -60px;
+        opacity: 0;
+      }
+
+      .read {
+        display: flex;
+        margin-left: 30px;
+        margin-top: -10px;
+        position: absolute;
+        font-size: 15px;
+      }
+      .read:hover {
+        color: black;
+      }
+      .container2 {
+        background-color: black;
+        color: white;
+        width: 270px;
+        height: 400px;
+        padding: 17px;
+        position: absolute;
+        left: 900px;
+
+        top: 200px;
+      }
+      .new {
+        font-size: 40px;
+        margin-top: -10px;
+        color: rgb(246, 199, 124);
+      }
+      .hyd {
+      }
+      .will {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid white;
+      }
+      .what {
+        line-height: 20px;
+        margin-bottom: 60px;
+        border-bottom: 1px solid white;
+      }
+      .rev {
+        width: 100px;
+        height: 130px;
+      }
+      .b {
+        color: red;
+        font-size: 40px;
+        margin-top: 60px;
+      }
+      .retro {
+        margin-left: 120px;
+        margin-top: -180px;
+        line-height: 18px;
+      }
+      .pc {
+        margin-top: -20px;
+        font-size: 20px;
+      }
+      .n {
+        margin-top: 50px;
+      }
+      .tj {
+        width: 100px;
+        height: 130px;
+        margin-left: 350px;
+        margin-top: -130px;
+      }
+      .ain {
+        margin-left: 470px;
+        margin-top: -130px;
+      }
+      .zero {
+        color: red;
+        font-size: 40px;
+        margin-top: 0px;
+      }
+      .top {
+        margin-left: -5px;
+        margin-top: -40px;
+        font-size: 20px;
+      }
+      .t {
+        margin-top: -20px;
+      }
+      .happen {
+        color: gray;
+      }
+      .our {
+        color: gray;
+      }
+      .nm {
+        width: 100px;
+        height: 130px;
+        margin-left: 680px;
+        margin-top: -120px;
+        position: absolute;
+        bottom: 40px;
+      }
+      .tree {
+        font-size: 40px;
+        color: red;
+      }
+      .kl {
+        margin-left: 790px;
+        margin-top: -160px;
+      }
+      .growth {
+        margin-top: -40px;
+        font-size: 20px;
+      }
+      .pandemic {
+        color: gray;
+      }
+      .v {
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><img class="first" src="assets/images/logo.svg" /></div>
+      <div class="text">
+        <ul class="minus">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+      <img class="large" src="assets/images/image-web-3-desktop.jpg" />
+      <h1 class="number">
+        The Bright <br />
+        Future of <br />
+        Web 3.0
+      </h1>
+      <p class="we">
+        We dive into the next evolution of the web that <br />claims to put the
+        power of the platforms back <br />into the hands of the people. But is
+        it really <br />fulfilling its promise?
+      </p>
+      <button class="button"><p class="read">Read more</p></button>
+      <div class="inside"></div>
+      <div class="container2">
+        <h2 class="new">New</h2>
+        <b class="hyd"> Hydrogen VS Electric Cars </b>
+        <p class="will">
+          Will hydrogen-fueled cars ever catch up to <br />EVs?
+        </p>
+
+        <b>The Downsides of AI Artistry</b>
+        <p class="what">
+          What are the possible adverse effects of <br />on-demand AI image
+          generation?
+        </p>
+        <b> Is VC Funding Drying Up? </b>
+        <p>
+          Private funding by VC firms is down 50% <br />
+          YOY. We take a look at what that means.
+        </p>
+      </div>
+
+      <div class="n">
+        <img class="rev" src="assets/images/image-retro-pcs.jpg" />
+        <div class="retro">
+          <p class="b">01</p>
+          <b><p class="pc">Reviving Retro PCs</p></b>
+          <p class="happen">
+            What happens when old PCs <br />are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="t">
+        <img class="tj" src="assets/images/image-top-laptops.jpg" />
+        <div class="main">
+          <div class="ain">
+            <p class="zero">02</p>
+            <p class="top"><b>Top 10 Laptops of 2022</b></p>
+            <p class="our">
+              Our best picks for various <br />
+              needs and budgets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="v">
+        <img class="nm" src="assets/images/image-gaming-growth.jpg" />
+        <div class="kl">
+          <p class="tree">03</p>
+          <p class="growth"><b>The Growth of Gaming</b></p>
+          <p class="pandemic">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
